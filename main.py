@@ -16,4 +16,4 @@ TIMEZONES = [
 
 @app.get("/")
 def main(time_service: Annotated[TimezoneService, Depends()]) -> TimeZones:
-    return time_service.get_current_times_in_timezones(TIMEZONES) # 
+    return time_service.get_current_times_in_timezones(TIMEZONES)
